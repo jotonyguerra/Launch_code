@@ -47,11 +47,12 @@ box_2 =
 "Irregular Choice Glitter Star Wars The Golden Droid C-3PO Flats",
 "Mint & White Color Block Emmie Saddle Shoes"]
 ## used each_with_index to format index into a more legible list
-
-
-box_2.each_with_index do |shoe, index|
+box_2.map!.each_with_index do |shoe, index|
   puts "#{index + 1}. #{shoe}\n"
 end
+## could use .map
+# box_2.map!
+
 
 # third box
 box_3 =

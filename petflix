@@ -1,0 +1,65 @@
+dramas = [
+  "Stanger Llamas",
+  "Game of Bones",
+  "Llama Actually",
+  "Grey's Catanomy",
+  "Breaking Baaaaahhhd"
+]
+
+animations = [
+  "Bojack Man",
+  "Family Dog",
+  "Futurellama",
+  "Barkcher",
+  "American Dog",
+  "Pokemon",
+  "Bob's Barkers"
+]
+
+comedies = [
+  "Barks and Recreation",
+  "30 Cats",
+  "Bones",
+  "Girl meets Cat",
+  "Gilmore Cats",
+  "New Dog",
+  "Catlandia",
+  "Full Mouse"
+]
+
+all_shows = [
+  "Stanger Llamas",
+  "Game of Bones",
+  "Llama Actually",
+  "Grey's Catanomy",
+  "Breaking Baaaaahhhd",
+  "Bojack Man",
+  "Family Dog",
+  "Futurellama",
+  "Barkcher",
+  "American Dog",
+  "Pokemon",
+  "Bob's Barkers",
+  "Barks and Recreation",
+  "30 Cats",
+  "Bones",
+  "Girl meets Cat",
+  "Gilmore Cats",
+  "New Dog",
+  "Catlandia",
+  "Full Mouse"
+]
+
+llama_drama= dramas.select {|drama| drama.include? "Llama"}
+puts "Dramas with Llamas: "
+llama_drama.each {|drama| puts "* #{drama}"}
+
+doggo = animations.select {|dog| dog.include? "Dog"}
+puts "animations with dogs: "
+doggo.each {|dog| puts "* #{dog}"}
+cat = comedies.select {|cats| cats.include? "Cat"}
+puts "Comedies with cats: "
+cat.each {|cats| puts "* #{cats}"}
+##feel clunky creating a new array for the first letter of all_shows
+alpha_array = all_shows.each.map {|show|  show[0]}
+puts alpha_array
